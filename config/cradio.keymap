@@ -81,8 +81,8 @@
         //│ !        │  @       │  (       │  )       │ {        │   │  }       │  [       │  ]       │  -       │  '       │
             &kp EXCL   &kp AT     &kp LPAR   &kp RPAR   &kp LBRC       &kp RBRC   &kp LBKT   &kp RBKT   &kp MINUS  &kp APOS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  1       │  2       │  3       │  4       │ 5        │   │  6       │  7       │  8       │  9       │  0       │
-            &kp 1      &kp 2      &kp 3      &kp 4      &kp 5          &kp 6      &kp 7      &kp 8      &kp 9      &kp 0
+        //│  1       │  2       │  3       │  4       │  5       │   │  6       │  7       │  8       │  9       │  0       │
+            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  `       │  |       │  &       │  %       │  ^       │   │  $       │  #       │  =       │  +       │  *       │
             &kp GRAVE  &kp PIPE   &kp AMPS   &kp PRCNT  &kp CARET      &kp DLLR   &kp HASH   &kp EQUAL  &kp PLUS   &kp STAR
