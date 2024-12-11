@@ -6,8 +6,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LCTRL k2  &ht LGUI k3  &ht LALT k4
-#define HRMR(k1,k2,k3,k4) &ht LALT k1  &ht RGUI k2  &ht RCTRL k3  &ht RSHFT k4
+#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LCTRL k2  &ht LGUI  k3  &ht LALT  k4
+#define HRMR(k1,k2,k3,k4) &ht LALT  k1  &ht RGUI  k2  &ht RCTRL k3  &ht RSHFT k4
 
 / {
     behaviors {
@@ -19,14 +19,6 @@
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
         };
     };
 
@@ -59,7 +51,7 @@
             &kp C_PREV &kp C_PP   &kp C_NEXT &kp TAB    &tog 2         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp PSCRN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ MUTE     │  VOL-    │  VOL+    │  BRI-    │  BRI+    │   │          │ PGDN     │ PGUP     │ F11      │ F12      │
-           &C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN &kp C_BRI_UP &none      &kp PG_DN  &kp PG_UP  &kp F11    &kp F12
+           &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN &kp C_BRI_UP &none      &kp PG_DN  &kp PG_UP  &kp F11    &kp F12
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none      &kp ESC        &trans     &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
